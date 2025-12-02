@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KonnectaAI - Automação Inteligente e Soluções de Software</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="/" class="navbar-logo">
+                <img src="img/logo/konnectaai.png" width="40" alt="KonnectaAI Logo">
+                <span class="logo-text">KonnectaAI</span>
+            </a>
+            <div class="navbar-menu">
+                <a href="#services" class="nav-link">Soluções</a>
+                <a href="#results" class="nav-link">Resultados</a>
+                <a href="/index.html#about" class="nav-link">Sobre</a>
+            </div>
+            <div class="navbar-actions">
+                <button class="btn btn-primary" onclick="openContactModal()">Entre em contato</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-background"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <div class="badge">
+                            🎉 <span>A Nova Era da Automação Corporativa</span>
+                        </div>
+                        <h1 class="hero-title">
+                            Transforme Dados em <span class="accent">Inteligência</span>
+                        </h1>
+                        <p class="hero-description">
+                            Unificamos seus sistemas, automatizamos processos complexos e desenvolvemos software sob medida para escalar sua operação com segurança e eficiência.
+                        </p>
+                        <div class="hero-actions">
+                            <button class="btn btn-primary" onclick="openContactModal()">
+                                Entre em contato →
+                            </button>
+                        </div>
+                        <div class="hero-social">
+                            <div class="avatars"></div>
+                            <p>Confiança de +50 empresas</p>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <div class="dashboard-preview">
+                            <img src="img/futuristic-dashboard-automation-interface-dark-mod.jpg" alt="KonnectaAI Dashboard" />
+                            <div class="floating-widget floating-widget-1">
+                                <div class="widget-icon">📊</div>
+                                <div>
+                                    <p class="widget-label">Integração</p>
+                                    <p class="widget-value">Conectado</p>
+                                </div>
+                            </div>
+                            <div class="floating-widget floating-widget-2">
+                                <div class="widget-icon">⚡</div>
+                                <div>
+                                    <p class="widget-label">Automação</p>
+                                    <p class="widget-value">Ativa</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partners Section -->
+        <section class="partners">
+            <div class="container">
+                <p class="partners-title">A CONFIANÇA DE LÍDERES DO MERCADO</p>
+                <div class="partners-scroll">
+                    <div class="partners-track">
+                        <div class="partner">
+                            <img class="partner-img" src="./img/partners/konverta.png" width="70" alt="Konverta">
+                        </div>
+                        <div class="partner">
+                            <img class="partner-img" src="./img/partners/global_tech.jpg" width="70" alt="Global Tech">
+                        </div>
+                        <div class="partner">
+                            <img class="partner-img" src="./img/partners/sisle.png" width="70" alt="Sisle">
+                        </div>
+                        <div class="partner">
+                            <img class="partner-img" src="./img/partners/Flash.jpg" width="70" alt="Flash Benefícios">
+                        </div>
+                        <div class="partner">
+                            <img class="partner-img" src="./img/partners/cakto.png" width="70" alt="Cakto">
+                        </div>
+                        <div class="partner">
+                            <img class="partner-img" src="./img/partners/n8n.png" width="70" alt="n8n">
+                        </div>
+                        <div class="partner">
+                            <img class="partner-img" src="./img/partners/pipedrive.png" width="70" alt="Pipedrive">
+                        </div>
+                        <!-- Repeat for loop effect -->
+                        <div class="partner">
+                            <img class="partner-img" src="./img/partners/konverta.png" width="70" alt="Konverta">
+                        </div>
+                        <div class="partner">
+                            <img class="partner-img" src="./img/partners/global_tech.jpg" width="70" alt="Global Tech">
+                        </div>
+                        <div class="partner">
+                            <img class="partner-img" src="./img/partners/sisle.png" width="70" alt="Sisle">
+                        </div>
+                        <div class="partner">
+                            <img class="partner-img" src="./img/partners/Flash.jpg" width="70" alt="Flash Benefícios">
+                        </div>
+                        <div class="partner">
+                            <img class="partner-img" src="./img/partners/cakto.png" width="70" alt="Cakto">
+                        </div>
+                        <div class="partner">
+                            <img class="partner-img" src="./img/partners/n8n.png" width="70" alt="n8n">
+                        </div>
+                        <div class="partner">
+                            <img class="partner-img" src="./img/partners/pipedrive.png" width="70" alt="Pipedrive">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Nossas Soluções</h2>
+                    <p>Tecnologia de ponta para impulsionar cada aspecto da sua organização.</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">🤖</div>
+                        <h3>Automação Inteligente</h3>
+                        <p>Elimine tarefas repetitivas com bots e workflows que trabalham 24/7 para sua empresa.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🔗</div>
+                        <h3>Integração de Sistemas</h3>
+                        <p>Conecte seu ERP, CRM e ferramentas de marketing em um ecossistema unificado e fluido.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">💻</div>
+                        <h3>Desenvolvimento Sob Medida</h3>
+                        <p>Software exclusivo projetado para resolver os desafios específicos do seu modelo de negócio.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🧠</div>
+                        <h3>IA & Machine Learning</h3>
+                        <p>Implemente inteligência artificial para previsão de dados e tomada de decisão estratégica.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">📊</div>
+                        <h3>Analytics & Dashboards</h3>
+                        <p>Visualize métricas em tempo real com painéis intuitivos para total controle operacional.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🔒</div>
+                        <h3>Segurança & Compliance</h3>
+                        <p>Arquitetura robusta que garante a proteção dos seus dados e conformidade com LGPD.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-grid">
+
+            <!-- IMAGEM + BADGE -->
+            <div class="about-image-wrapper">
+                <div class="about-image">
+                <img src="img/professional-software-engineering-team-meeting-gla.jpg" 
+                    alt="KonnectaAI Team" />
+                </div>
+
+                <!-- Badge flutuante -->
+                <div class="floating-badge">
+                <p class="badge-number">4+</p>
+                <p class="badge-text">
+                    Anos de experiência combinada em engenharia de software e automação.
+                </p>
+                </div>
+            </div>
+
+            <!-- TEXTO -->
+            <div class="about-content">
+                <h2 class="about-title">
+                Excelência Técnica e Compromisso com Resultado
+                </h2>
+
+                <p class="about-description">
+                Na KonnectaAI, não apenas escrevemos código. Nós desenhamos o futuro da sua operação com uma metodologia
+                focada em ROI e escalabilidade.
+                </p>
+
+                <ul class="about-list">
+                <li><span class="check-icon">✔</span> Metodologia Ágil e Transparente</li>
+                <li><span class="check-icon">✔</span> Arquitetura Cloud-Native Escalável</li>
+                <li><span class="check-icon">✔</span> Suporte Premium 24/7</li>
+                <li><span class="check-icon">✔</span> Consultoria Estratégica Inclusa</li>
+                </ul>
+            </div>
+
+            </div>
+        </div>
+        </section>
+
+        <!-- Results Section -->
+        <section id="results" class="results-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Resultados que Entregamos</h2>
+                    <p>Números que mostram o impacto real da nossa tecnologia.</p>
+                </div>
+
+                <div class="results-grid">
+                    <div class="result-card">
+                        <span class="result-number" data-target="150">0</span>
+                        <p class="result-label">Processos Automatizados</p>
+                    </div>
+                    <div class="result-card">
+                        <span class="result-number" data-target="98">0</span>
+                        <p class="result-label">Integrações Concluídas</p>
+                    </div>
+                    <div class="result-card">
+                        <span class="result-number" data-target="50">0</span>
+                        <p class="result-label">Clientes Atendidos</p>
+                    </div>
+                    <div class="result-card">
+                        <span class="result-number" data-target="1200">0</span>
+                        <p class="result-label">Horas Salvas por Mês</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section id="about" class="cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Pronto para transformar seu negócio?</h2>
+                    <p>Descubra como a KonnectaAI pode potencializar sua operação com automação inteligente.</p>
+                    <button class="btn btn-primary" onclick="openContactModal()">Falar com especialista</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="navbar-logo">
+                        <a href="/" class="navbar-logo">
+                            <img src="img/logo/konnectaai.png" width="40" alt="KonnectaAI Logo">
+                            <span class="logo-text">KonnectaAI</span>
+                        </a>
+                    </div>
+                    <p>Potencializando negócios através de automação inteligente e integração de sistemas.</p>
+                
+                </div>
+                <div class="footer-section">
+                    <h4>Soluções</h4>
+                    <ul>
+                        <li><a href="/automacoes.html">Automação</a></li>
+                        <li><a href="/desenvolvimento.html">Desenvolvimento</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="/index.html#about">Sobre Nós</a></li>
+                        <li><a href="/carreiras.html">Carreiras</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Social</h4>
+                    <ul>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="https://www.instagram.com/konnecta.ai/" target="_blank">Instagram</a></li>
+                        <li><a href="#">WhatsApp</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 KonnectaAI. Todos os direitos reservados.</p>
+                <div class="footer-links">
+                    <a href="#">Termos de Uso</a>
+                    <a href="#">Privacidade</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cookie Consent -->
+    <div id="cookieConsent" class="cookie-consent">
+        <div class="cookie-content">
+            <div>
+                <h3>Cookies & Privacidade</h3>
+                <p>Utilizamos cookies para melhorar sua experiência, personalizar conteúdo e analisar nosso tráfego. Ao aceitar, você concorda com nossa <a href="#">política de privacidade</a>.</p>
+            </div>
+            <div class="cookie-actions">
+                <button class="btn btn-secondary" onclick="rejectCookies()">Rejeitar</button>
+                <button class="btn btn-primary" onclick="acceptCookies()">Aceitar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeContactModal()">✕</button>
+            <h2>Entre em contato</h2>
+            <form id="contactForm" onsubmit="handleSubmit(event)">
+                <input type="text" placeholder="Seu nome" required>
+                <input type="email" placeholder="Seu email" required>
+                <textarea placeholder="Sua mensagem" rows="5" required></textarea>
+                <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

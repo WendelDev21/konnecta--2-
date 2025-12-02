@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carreiras - KonnectaAI</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="/" class="navbar-logo">
+                <img src="img/logo/konnectaai.png" width="40" alt="KonnectaAI Logo">
+                <span class="logo-text">KonnectaAI</span>
+            </a>
+            <div class="navbar-menu">
+                <a href="#services" class="nav-link">Soluções</a>
+                <a href="#results" class="nav-link">Resultados</a>
+                <a href="/index.html#about" class="nav-link">Sobre</a>
+            </div>
+            <div class="navbar-actions">
+                <button class="btn btn-primary" onclick="openContactModal()">Entre em contato</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="careers-hero">
+            <div class="container">
+                <h1>Junte-se ao nosso time</h1>
+                <p>Na KonnectaAI, somos apaixonados por criar soluções de automação que transformam negócios. Procuramos talentos que compartilham dessa visão e querem fazer parte de uma jornada inovadora.</p>
+                <p class="careers-values">Crescimento • Colaboração • Impacto</p>
+            </div>
+        </section>
+
+        <!-- Culture Section -->
+        <section class="culture">
+            <div class="container">
+                <h2>Cultura KonnectaAI</h2>
+                <div class="culture-grid">
+                    <div class="culture-card">
+                        <h3>Inovação</h3>
+                        <p>Encorajamos ideias criativas e experimentação em tudo que fazemos.</p>
+                    </div>
+                    <div class="culture-card">
+                        <h3>Colaboração</h3>
+                        <p>Trabalhamos juntos, compartilhando conhecimento e celebrando sucessos.</p>
+                    </div>
+                    <div class="culture-card">
+                        <h3>Crescimento</h3>
+                        <p>Investimos no desenvolvimento pessoal e profissional de cada membro do time.</p>
+                    </div>
+                    <div class="culture-card">
+                        <h3>Excelência</h3>
+                        <p>Buscamos sempre a qualidade máxima em tudo que entregamos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Job Listings Section -->
+        <section class="jobs">
+            <div class="container">
+                <h2>Oportunidades em Aberto</h2>
+                <div id="jobsContainer" class="jobs-list"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="navbar-logo">
+                        <a href="/" class="navbar-logo">
+                            <img src="img/logo/konnectaai.png" width="40" alt="KonnectaAI Logo">
+                            <span class="logo-text">KonnectaAI</span>
+                        </a>
+                    </div>
+                    <p>Potencializando negócios através de automação inteligente e integração de sistemas.</p>
+                
+                </div>
+                <div class="footer-section">
+                    <h4>Soluções</h4>
+                    <ul>
+                        <li><a href="/automacoes.html">Automação</a></li>
+                        <li><a href="/desenvolvimento.html">Desenvolvimento</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="/index.html/index.html#about">Sobre Nós</a></li>
+                        <li><a href="/carreiras.html">Carreiras</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Social</h4>
+                    <ul>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="https://www.instagram.com/konnecta.ai/" target="_blank">Instagram</a></li>
+                        <li><a href="#">WhatsApp</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 KonnectaAI. Todos os direitos reservados.</p>
+                <div class="footer-links">
+                    <a href="#">Termos de Uso</a>
+                    <a href="#">Privacidade</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cookie Consent -->
+    <div id="cookieConsent" class="cookie-consent">
+        <div class="cookie-content">
+            <div>
+                <h3>Cookies & Privacidade</h3>
+                <p>Utilizamos cookies para melhorar sua experiência, personalizar conteúdo e analisar nosso tráfego. Ao aceitar, você concorda com nossa <a href="#">política de privacidade</a>.</p>
+            </div>
+            <div class="cookie-actions">
+                <button class="btn btn-secondary" onclick="rejectCookies()">Rejeitar</button>
+                <button class="btn btn-primary" onclick="acceptCookies()">Aceitar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeContactModal()">✕</button>
+            <h2>Entre em contato</h2>
+            <form id="contactForm" onsubmit="handleSubmit(event)">
+                <input type="text" placeholder="Seu nome" required>
+                <input type="email" placeholder="Seu email" required>
+                <textarea placeholder="Sua mensagem" rows="5" required></textarea>
+                <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/carreiras.js"></script>
+</body>
+</html>
