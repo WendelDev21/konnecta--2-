@@ -129,9 +129,10 @@
             <button class="modal-close" onclick="closeContactModal()">✕</button>
             <h2>Entre em contato</h2>
             <form id="contactForm" onsubmit="handleSubmit(event)">
-                <input type="text" placeholder="Seu nome" required>
-                <input type="email" placeholder="Seu email" required>
-                <textarea placeholder="Sua mensagem" rows="5" required></textarea>
+                <!-- Added name attributes to form inputs -->
+                <input type="text" name="name" placeholder="Seu nome" required>
+                <input type="email" name="email" placeholder="Seu email" required>
+                <textarea name="message" placeholder="Sua mensagem" rows="5" required></textarea>
                 <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
             </form>
         </div>

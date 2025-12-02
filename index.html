@@ -171,46 +171,46 @@
         </section>
 
         <section id="about" class="about-section">
-        <div class="container">
-            <div class="about-grid">
+            <div class="container">
+                <div class="about-grid">
 
-            <!-- IMAGEM + BADGE -->
-            <div class="about-image-wrapper">
-                <div class="about-image">
-                <img src="img/professional-software-engineering-team-meeting-gla.jpg" 
-                    alt="KonnectaAI Team" />
+                    <!-- IMAGEM + BADGE -->
+                    <div class="about-image-wrapper">
+                        <div class="about-image">
+                            <img src="img/professional-software-engineering-team-meeting-gla.jpg" 
+                                 alt="KonnectaAI Team" />
+                        </div>
+
+                        <!-- Badge flutuante -->
+                        <div class="floating-badge">
+                            <p class="badge-number">4+</p>
+                            <p class="badge-text">
+                                Anos de experiência combinada em engenharia de software e automação.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- TEXTO -->
+                    <div class="about-content">
+                        <h2 class="about-title">
+                            Excelência Técnica e Compromisso com Resultado
+                        </h2>
+
+                        <p class="about-description">
+                            Na KonnectaAI, não apenas escrevemos código. Nós desenhamos o futuro da sua operação com uma metodologia
+                            focada em ROI e escalabilidade.
+                        </p>
+
+                        <ul class="about-list">
+                            <li><span class="check-icon">✔</span> Metodologia Ágil e Transparente</li>
+                            <li><span class="check-icon">✔</span> Arquitetura Cloud-Native Escalável</li>
+                            <li><span class="check-icon">✔</span> Suporte Premium 24/7</li>
+                            <li><span class="check-icon">✔</span> Consultoria Estratégica Inclusa</li>
+                        </ul>
+                    </div>
+
                 </div>
-
-                <!-- Badge flutuante -->
-                <div class="floating-badge">
-                <p class="badge-number">4+</p>
-                <p class="badge-text">
-                    Anos de experiência combinada em engenharia de software e automação.
-                </p>
-                </div>
             </div>
-
-            <!-- TEXTO -->
-            <div class="about-content">
-                <h2 class="about-title">
-                Excelência Técnica e Compromisso com Resultado
-                </h2>
-
-                <p class="about-description">
-                Na KonnectaAI, não apenas escrevemos código. Nós desenhamos o futuro da sua operação com uma metodologia
-                focada em ROI e escalabilidade.
-                </p>
-
-                <ul class="about-list">
-                <li><span class="check-icon">✔</span> Metodologia Ágil e Transparente</li>
-                <li><span class="check-icon">✔</span> Arquitetura Cloud-Native Escalável</li>
-                <li><span class="check-icon">✔</span> Suporte Premium 24/7</li>
-                <li><span class="check-icon">✔</span> Consultoria Estratégica Inclusa</li>
-                </ul>
-            </div>
-
-            </div>
-        </div>
         </section>
 
         <!-- Results Section -->
@@ -243,7 +243,7 @@
         </section>
 
         <!-- CTA Section -->
-        <section id="about" class="cta">
+        <section id="cta" class="cta">
             <div class="container">
                 <div class="cta-content">
                     <h2>Pronto para transformar seu negócio?</h2>
@@ -322,9 +322,9 @@
             <button class="modal-close" onclick="closeContactModal()">✕</button>
             <h2>Entre em contato</h2>
             <form id="contactForm" onsubmit="handleSubmit(event)">
-                <input type="text" placeholder="Seu nome" required>
-                <input type="email" placeholder="Seu email" required>
-                <textarea placeholder="Sua mensagem" rows="5" required></textarea>
+                <input type="text" name="name" placeholder="Seu nome" required>
+                <input type="email" name="email" placeholder="Seu email" required>
+                <textarea name="message" placeholder="Sua mensagem" rows="5" required></textarea>
                 <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
             </form>
         </div>
