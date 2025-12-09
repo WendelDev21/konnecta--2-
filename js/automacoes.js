@@ -6,35 +6,23 @@ const templates = [
     icon: "📧",
     category: "Marketing",
     difficulty: "Fácil",
-    timeToImplement: "30 min",
     benefits: [
       "Aumento de 45% em taxa de conversão",
       "Redução de 60% no tempo de marketing",
       "Engajamento personalizado em escala",
     ],
-    features: [
-      "Segmentação automática",
-      "Templates responsivos",
-      "Análise de desempenho em tempo real",
-      "A/B testing integrado",
-      "Integração com CRM",
-    ],
   },
   {
     id: "pedidos-ecommerce",
-    title: "Processamento de Pedidos E-commerce",
-    description: "Automatize todo o ciclo de pedidos: confirmação, pagamento, estoque e envio.",
-    icon: "🛒",
-    category: "E-commerce",
+    title: "Integração com CRM",
+    description: "A automação do CRM organiza todos os seus leads e clientes de forma automática",
+    icon: "🚀",
+    category: "CRM",
     difficulty: "Intermediário",
-    timeToImplement: "2 horas",
-    benefits: ["Processamento 10x mais rápido", "Redução de erros em 95%", "Rastreamento automático de estoque"],
-    features: [
-      "Validação automática de pedidos",
-      "Atualização de estoque em tempo real",
-      "Geração de NF eletrônica",
-      "Integração com transportadoras",
-      "Notificações ao cliente",
+    benefits: [
+      "Respostas mais rápidas e atendimento consistente", 
+      "Zero tarefas repetitivas", 
+      "Leads organizados automaticamente"
     ],
   },
   {
@@ -44,18 +32,10 @@ const templates = [
     icon: "👥",
     category: "Operações",
     difficulty: "Intermediário",
-    timeToImplement: "90 min",
     benefits: [
       "Redução de 50% no tempo de onboarding",
       "Aumento de satisfação de clientes",
       "Menos carga no time de suporte",
-    ],
-    features: [
-      "Email de boas-vindas personalizado",
-      "Compartilhamento automático de documentos",
-      "Agendamento de chamadas",
-      "Checklist interativo",
-      "Feedback automático",
     ],
   },
   {
@@ -65,18 +45,10 @@ const templates = [
     icon: "📊",
     category: "Financeiro",
     difficulty: "Avançado",
-    timeToImplement: "4 horas",
     benefits: [
       "Elimina trabalho manual de 20 horas/semana",
       "Reduz erros de consolidação em 99%",
       "Insights financeiros em tempo real",
-    ],
-    features: [
-      "Consolidação de múltiplas fontes",
-      "Cálculos complexos automáticos",
-      "Geração de PDFs formatados",
-      "Envio agendado para stakeholders",
-      "Análise preditiva incluída",
     ],
   },
   {
@@ -86,18 +58,10 @@ const templates = [
     icon: "💬",
     category: "Suporte",
     difficulty: "Avançado",
-    timeToImplement: "3 horas",
     benefits: [
       "Atendimento disponível 24/7",
       "Redução de 70% em tickets simples",
       "Satisfação de cliente acima de 92%",
-    ],
-    features: [
-      "IA com aprendizado contínuo",
-      "Suporte multiidioma",
-      "Escalação inteligente",
-      "Histórico de conversa persistente",
-      "Integração com help desk",
     ],
   },
   {
@@ -107,15 +71,7 @@ const templates = [
     icon: "📈",
     category: "Analytics",
     difficulty: "Fácil",
-    timeToImplement: "45 min",
     benefits: ["Visibilidade total do pipeline", "Decisões baseadas em dados", "Identificação de oportunidades"],
-    features: [
-      "Sincronização automática com CRM",
-      "Gráficos interativos",
-      "Alertas de anomalias",
-      "Comparação período a período",
-      "Previsões de vendas",
-    ],
   },
 ]
 
@@ -148,18 +104,10 @@ document.addEventListener("DOMContentLoaded", () => {
         <h4>✨ Benefícios Principais</h4>
         <div class="template-benefits">
           ${template.benefits.map((b) => `<div class="benefit-item">✓ ${b}</div>`).join("")}
-        </div>
-        
-        <h4>🔧 Recursos Inclusos</h4>
-        <div class="template-features">
-          <div class="features-list">
-            ${template.features.map((f) => `<div class="feature-item">• ${f}</div>`).join("")}
-          </div>
-        </div>
-        
-        <div style="display: flex; gap: 12px; margin-top: 24px;">
+        </div>        
+        <!-- <div style="display: flex; gap: 12px; margin-top: 24px;">
           <button class="apply-btn" onclick="openContactModal()">Solicitar Demo</button>
-        </div>
+        </div> -->
       </div>
     `
 
